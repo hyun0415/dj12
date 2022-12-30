@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block con %}
+
+    <h1></h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <input type="password" size="50" name="upass" placeholder="INPUT PASSWORD"><br><br>
+        <button>변경</button>
+    </form>
+
+{% endblock %}
